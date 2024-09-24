@@ -1,0 +1,55 @@
+.authorization {
+    &__window {
+        background-color: #DCDCDC;
+        width: 35%;
+        height: 55vh;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 2px;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; 
+        padding-bottom: 20px;
+        margin: 10% 10% 5% 30% ; 
+
+        &__login {
+            &__text {
+                font-size: 24px;
+                padding-top: 20%;
+                padding-left: 5%;
+            }
+            &__input {
+                height: 7%;
+                width: 75%;
+                margin-left: 5%;
+                background-color: #B0E0E6;
+            }
+        }
+
+        &__password {
+            &__text {
+                font-size: 24px;
+                padding-top: 20px;
+                padding-left: 5%;
+            }
+            &__input {
+                background-color: #B0E0E6;
+                height: 7%;
+                width: 75%;
+                margin-left: 5%;
+            }
+        }
+
+        &__button {
+            width: 35%;
+            align-self: center; 
+            margin-top: auto; 
+            padding: 10px 20px; 
+            background-color: #2F4F4F; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+    }
+}
