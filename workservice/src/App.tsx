@@ -1,10 +1,11 @@
 import React from 'react';
-import Authorization from './modules/Authorization/AuthorizationWindow'
+
+import MainWindow from './components/MainWindow/MainWindow';
 
 
 function App() {
   return (
-    <Authorization />
+    <MainWindow />
   );
 }
 

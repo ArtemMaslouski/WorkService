@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.main-window {
+    &__header {
+        width: 100%;
+        height: 10vh; 
+        background-color: black;
+    }
+
+    &__navigation {
+        &__icon {
+            width: 95px;
+            height: 95px;
+            border-radius: 50px;
+        }
+
+        ul {
+            display: flex; 
+            list-style-type: none;
+            margin: 0; 
+            padding: 0; 
+            align-items: center; 
+        }
+
+        li {
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none; 
+            color: #808080; 
+        }
+
+        a:hover {
+            color: #FFFFFF; 
+        }
+    }
+}
