@@ -2,6 +2,10 @@ import React from 'react'
 import './sass/MainWindow.scss'
 import icon from '../../OIG3.png';
 
+const handleCreate = () => {
+    alert('Резюме создано')
+}
+
 const MainNavigation = () => {
     return (
         <div className='main-window__header'>
@@ -16,6 +20,7 @@ const MainNavigation = () => {
                     <li><a href="nvlds">Пока не придумал</a></li>
                     <li><a href="vndsl">Пока не придумал x2</a></li>
                     <li><a href="vndsl">Пока не придумал x3</a></li>
+                    <button className='main-window__navigation__create-resume' onClick={handleCreate}>Создать резюме</button>
                 </ul>
             </nav>
         </div>
