@@ -6,7 +6,6 @@ import VacancyCard from '../../modules/MainWindow/VacancyCard'
 const MainWindow = () => {
     return (
         <>
-             <MainNavigation />
              <MainSearchInput />
              <VacancyCard />
              <VacancyCard />

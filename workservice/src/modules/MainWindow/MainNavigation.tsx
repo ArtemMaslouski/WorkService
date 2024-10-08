@@ -1,12 +1,16 @@
 import React from 'react'
 import './sass/MainWindow.scss'
+import { useNavigate } from 'react-router-dom'
+
 import icon from '../../OIG3.png';
 
-const handleCreate = () => {
-    alert('Резюме создано')
-}
+const MainNavigation: React.FC = () => {
+    
+    const navigate = useNavigate();
+    const handleCreate = () => {
+        navigate('/createResume')
+    }
 
-const MainNavigation = () => {
     return (
         <div className='main-window__header'>
             <nav className='main-window__navigation'>
@@ -24,7 +28,6 @@ const MainNavigation = () => {
                 </ul>
             </nav>
         </div>
-        
     )
 }
 
