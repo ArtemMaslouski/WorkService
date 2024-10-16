@@ -72,4 +72,64 @@
             font-size: 18px;
         }
     }
+    &__user-city{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__select{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__data-picker{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__sex{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__male-radioButton{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
 }
