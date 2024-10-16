@@ -12,7 +12,7 @@ const FullResume = () => {
           <div className='create-resume__full-resume__name-block'>
             <InputName />
             <SurnameInput />
-            <ThirdNameInput/>
+            <ThirdNameInput />
           </div>
         </>
     )
