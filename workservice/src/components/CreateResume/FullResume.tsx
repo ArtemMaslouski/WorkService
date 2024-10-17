@@ -4,6 +4,7 @@ import SurnameInput from '../../modules/CreateResume/SurnameInput';
 import ThirdNameInput from '../../modules/CreateResume/ThirdNameInput';
 import UserCity from '../../modules/CreateResume/City'
 import Sex from '../../modules/CreateResume/Sex'
+import Citizenship from '../../modules/CreateResume/Citizenship'
 
 import './scss/FullResume.scss'
 import DataPicker from '../../modules/CreateResume/DataPicker';
@@ -19,6 +20,7 @@ const FullResume = () => {
             <UserCity />
             <DataPicker/>
             <Sex/>
+            <Citizenship />
           </div>
         </>
     )
