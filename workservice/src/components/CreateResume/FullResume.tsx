@@ -14,9 +14,14 @@ import Faculty from '../../modules/CreateResume/Faculty';
 import Specialize from '../../modules/CreateResume/Specialize';
 import EducationForm from '../../modules/CreateResume/EducationForm';
 import GraduationYear from '../../modules/CreateResume/GraduationYear';
+import Position from '../../modules/CreateResume/Position'
+import Salary from '../../modules/CreateResume/Salary';
+import Experience from '../../modules/CreateResume/Experience';
+import DataPicker from '../../modules/CreateResume/DataPicker';
 
 import './scss/FullResume.scss'
-import DataPicker from '../../modules/CreateResume/DataPicker';
+import OrganizationName from '../../modules/CreateResume/OrganizationName';
+
 
 const FullResume = () => {
     return (
@@ -43,6 +48,12 @@ const FullResume = () => {
             <Specialize />
             <EducationForm/>
             <GraduationYear/>
+          </div>
+          <div className='create-resume__full-resume__career-block'>
+            <div className='create-resume__full-resume__career-block__text'>Карьера</div>
+            <Position/>
+            <Salary/>
+            <Experience />
           </div>
         </>
     )

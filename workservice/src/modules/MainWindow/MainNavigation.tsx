@@ -20,8 +20,8 @@ const MainNavigation: React.FC = () => {
                             <img className= 'main-window__navigation__icon' src={icon} alt="Иконка" />
                         </a>
                     </li>
+                    <li><a href="profile">Профиль</a></li>
                     <li><a href="vacancies">Вакансии</a></li>
-                    <li><a href="nvlds">Пока не придумал</a></li>
                     <li><a href="vndsl">Пока не придумал x2</a></li>
                     <li><a href="vndsl">Пока не придумал x3</a></li>
                     <button className='main-window__navigation__create-resume' onClick={handleCreate}>Создать резюме</button>

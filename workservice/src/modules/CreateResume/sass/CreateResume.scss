@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box; 
 }
+.organizationName-container{
+    margin-top: 20px;
+}
 .create-resume{
     &__full-resume{
         &__text{
@@ -355,5 +358,203 @@
             padding-left: 1%;
             font-size: 18px;
         }
+    }
+    &__position{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__salary{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__experience {
+        display: flex; 
+        align-items: center; 
+    
+        &__text {
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+    
+        &__have-experience,
+        &__dont-have-experience {
+            display: flex; 
+            align-items: center;
+            margin-right: 20px; 
+            margin-left: 120px;
+    
+            &__text {
+                display: inline-block;
+                margin-left: 10px; 
+                font-size: 18px;
+            }
+    
+            &__input {
+                display: inline-block;
+                width: auto; 
+                height: 5vh; 
+                border: 2px solid rgba(0, 0, 0, 0.1);
+                margin-left: 10px; 
+                border-radius: 20px;
+                padding-left: 1%;
+                font-size: 18px;
+            }
+        }
+    }
+    &__organizationName{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__organizationSite{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__activity-field{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__select{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;    
+        }
+
+    }
+    &__start-work{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__end-work{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__add-work-place{
+        display: inline-block;
+        margin-top: 2%;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        font-size: 18px;
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+    }
+    &__delete-work-place{
+        display: inline-block;
+        margin-left: 50%;
+        margin-bottom: 3%;
+        font-size: 18px;
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
     }
 }

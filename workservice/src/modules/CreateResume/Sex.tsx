@@ -4,8 +4,7 @@ import '../../modules/CreateResume/sass/CreateResume.scss';
 const Sex: React.FC = () => {
     const [selectedSex, setSelectedSex] = useState<string | null>(null);
 
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        console.log(event.target.value); 
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => { 
         setSelectedSex(event.target.value);
     };
 
