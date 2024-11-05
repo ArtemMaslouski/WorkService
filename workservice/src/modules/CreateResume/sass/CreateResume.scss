@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.organizationName-container{
+    margin-top: 20px;
+}
+.create-resume{
+    &__full-resume{
+        &__text{
+            margin-left: 20%;
+            margin-top: 2%;
+        }
+    }
+    &__name{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__surname{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+
+    &__third-name{
+        
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__user-city{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__select{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__data-picker{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__sex {
+        display: flex; 
+        align-items: center; 
+    
+        &__text {
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+    
+        &__male-radioButton,
+        &__female-radioButton {
+            display: flex; 
+            align-items: center;
+            margin-right: 20px; 
+            margin-left: 110px;
+    
+            &__text {
+                display: inline-block;
+                margin-left: 10px; 
+                font-size: 18px;
+            }
+    
+            &__input {
+                display: inline-block;
+                width: auto; 
+                height: 5vh; 
+                border: 2px solid rgba(0, 0, 0, 0.1);
+                margin-left: 10px; 
+                border-radius: 20px;
+                padding-left: 1%;
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__citizenship{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__select{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+
+    &__permission{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__select{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+
+    &__phone-number{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+
+    &__email{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+
+    &__education-level{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__select{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__institution-name{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+
+    &__faculty{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__specialize{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__education-form{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__select{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;    
+        }
+    }
+    &__graduation-year{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__position{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__salary{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__experience {
+        display: flex; 
+        align-items: center; 
+    
+        &__text {
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+    
+        &__have-experience,
+        &__dont-have-experience {
+            display: flex; 
+            align-items: center;
+            margin-right: 20px; 
+            margin-left: 120px;
+    
+            &__text {
+                display: inline-block;
+                margin-left: 10px; 
+                font-size: 18px;
+            }
+    
+            &__input {
+                display: inline-block;
+                width: auto; 
+                height: 5vh; 
+                border: 2px solid rgba(0, 0, 0, 0.1);
+                margin-left: 10px; 
+                border-radius: 20px;
+                padding-left: 1%;
+                font-size: 18px;
+            }
+        }
+    }
+    &__organizationName{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__organizationSite{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__activity-field{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__select{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;    
+        }
+
+    }
+    &__start-work{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__end-work{
+        &__text{
+            display: inline-block;
+            width: 100px;
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            font-size: 18px;
+        }
+        &__input{
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            border-radius: 20px;
+            padding-left: 1%;
+            font-size: 18px;
+        }
+    }
+    &__add-work-place{
+        display: inline-block;
+        margin-top: 2%;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        font-size: 18px;
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+    }
+    &__delete-work-place{
+        display: inline-block;
+        margin-left: 50%;
+        margin-bottom: 3%;
+        font-size: 18px;
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+    }
+}
