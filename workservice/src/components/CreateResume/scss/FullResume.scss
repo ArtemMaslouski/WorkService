@@ -56,5 +56,21 @@
                 font-weight: bold;
             }
         }
+        &__save-button{
+            border-radius: 15px;
+            border: none;
+            width: 10%;
+            background-color: #532E74;
+            color: #FFFFFF;
+            height: 4vh;
+            font-size: 16px;
+            margin-left: 20%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            &:hover{
+                background-color: #A575CF;
+                cursor: pointer;
+            }
+        }
     }
 }

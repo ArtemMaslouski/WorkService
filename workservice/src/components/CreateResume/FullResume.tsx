@@ -55,6 +55,9 @@ const FullResume = () => {
             <Salary/>
             <Experience />
           </div>
+          <button className='create-resume__full-resume__save-button'>
+                Сохранить
+          </button>
         </>
     )
 }
