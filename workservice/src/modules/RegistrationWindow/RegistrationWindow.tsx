@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Users, User } from '../../api/findUser';
 import './sass/RegistrationWindow.scss';
+import { useNavigate } from 'react-router-dom'
 
 const RegistrationWindow: React.FC = () => {
     const [login, setLogin] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     const [users, setUsers] = useState<User[]>([]);
+    const navigate = useNavigate();
 
     const handleChangeLogin = (event: React.ChangeEvent<HTMLInputElement>) => {
         setLogin(event.target.value);
@@ -14,6 +16,14 @@ const RegistrationWindow: React.FC = () => {
     const handleChangePassword = (event: React.ChangeEvent<HTMLInputElement>) => {
         setPassword(event.target.value);
     };
+
+    const employerRegistration = () => {
+        navigate('registration-employer');
+    }
+
+    const employeeRegistration = () => {
+        navigate('registration-employee');
+    }
 
     const handleEnter = async () => {
         try{
@@ -48,10 +58,10 @@ const RegistrationWindow: React.FC = () => {
                 <div className='registrationWindow__registration__block'>
                     <div className='registrationWindow__registration__employee__name'>Соискателям</div>
                     <div className='registrationWindow__registration__employee__text'>Зарегистрировавшись, соискатели могут размещать резюме и откликаться на заинтересовавшие их вакансии.</div>
-                    <button className='registrationWindow__registration__employee__button'>Регистрация соискателя</button>
+                    <button className='registrationWindow__registration__employee__button' onClick={employeeRegistration}>Регистрация соискателя</button>
                     <div className='registrationWindow__registration__employer__name'>Работодателям</div>
                     <div className='registrationWindow__registration__employer__text'>Зарегистрировавшись, работодатели могут размещать свои вакансии.</div>
-                    <button className='registrationWindow__registration__employer__button'> Регистрация работодателя</button>
+                    <button className='registrationWindow__registration__employer__button' onClick={employerRegistration}> Регистрация работодателя</button>
                 </div>
                 
             </div>
