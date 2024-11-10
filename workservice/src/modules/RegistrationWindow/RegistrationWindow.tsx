@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
-import { Users, User } from '../../api/findUser';
+import { Users, User } from '../../api/users';
+
 import './sass/RegistrationWindow.scss';
 import { useNavigate } from 'react-router-dom'
 
 const RegistrationWindow: React.FC = () => {
-    const [login, setLogin] = useState<string>('');
-    const [password, setPassword] = useState<string>('');
+    const [userLogin, setUserLogin] = useState<string>('');
+    const [userPassword, setUserPassword] = useState<string>('');
     const [users, setUsers] = useState<User[]>([]);
     const navigate = useNavigate();
 
     const handleChangeLogin = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setLogin(event.target.value);
+        setUserLogin(event.target.value);
     };
 
     const handleChangePassword = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setPassword(event.target.value);
+        setUserPassword(event.target.value);
     };
 
     const employerRegistration = () => {
@@ -25,20 +26,16 @@ const RegistrationWindow: React.FC = () => {
         navigate('registration-employee');
     }
 
-    const handleEnter = async () => {
+    const handleEnter = async (login: string, password: string): Promise<void> => {
         try{
-            const response = await Users.getUsers();
-
-            for(let user of response ){
-                console.log(user);
-                if(user.Login === login){
-                    alert('Подходит')
-                    
-                }
-                alert('Не подходит')
+            const response = await Users.loginUsers(login, password)
+            
+            console.log(response)
+            if(response.data.status === 'success'){
+                navigate('/');
             }
-        } catch(error){
-            console.error(error)
+        }catch(error){
+            console.error("Произошла ошибка")
         }
     };
 
@@ -52,7 +49,7 @@ const RegistrationWindow: React.FC = () => {
                     <div className='registrationWindow__enter__password__text'>Пароль</div>
                     <input className='registrationWindow__enter__password__input' type="password" onChange={handleChangePassword} />
                 </div>
-                <button className='registrationWindow__enter__button' onClick={handleEnter}>Войти</button>
+                <button className='registrationWindow__enter__button' onClick={() => handleEnter(userLogin,userPassword)}>Войти</button>
             </div>
             <div className='registrationWindow__registration'>
                 <div className='registrationWindow__registration__block'>

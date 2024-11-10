@@ -4,7 +4,7 @@ import MainSearchInput from '../../modules/MainWindow/MainSearchInput'
 import VacancyCard from '../../modules/MainWindow/VacancyCard'
 import Position from '../../modules/CreateResume/Position';
 import FilterArea from '../../modules/MainWindow/FilterArea'
-import axios from 'axios';
+import { Vacancies } from '../../api/vacancies';
 interface Cards{
     Position: string;
     Salary:string;
@@ -16,12 +16,12 @@ const MainWindow = () => {
     const [card, setCard] = useState<Cards[]>([])
 
     useEffect(() => {
+
         const loadCards = async () => {
             try{
-                const response = await axios.get('http://localhost:3000/vacancies/get')
-                const data = response.data;
+                const response = await Vacancies.getVacancies()
 
-                setCard(data)
+                setCard(response.data);
 
             } catch(error){
                 console.error("Ошибка при загрузке вакансий:",error)
